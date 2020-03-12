@@ -1,0 +1,39 @@
+<html>
+<head>
+  <title>Curso Javascript</title>
+</head>
+
+<body>
+
+  <script>
+    // AND, OR e NOT
+
+    var sexo = 'M', idade = 33;
+
+    if (sexo === 'M' && idade >= 18) { //"&&" = and
+        console.log('masculino e maior');
+    }
+    if (sexo === 'M' || idade >= 18) { //"||" = or
+        console.log('masculino ou maior');
+    }
+    if (sexo !== 'M' || idade >= 18) { //"!" = not
+        console.log('nao masculino ou maior');
+    }
+    if (sexo !== 'M' && idade >= 18) { //"!" = not
+        console.log('nao masculino e maior');
+    }
+
+    /*
+    var masculino;
+    if (sexo === 'M') {
+        masculino = true;
+    } else {
+        masculino = false;
+    }
+    */
+    var masculino = (sexo ==='M');
+    console.log(masculino);
+
+  </script>
+</body>
+</html>

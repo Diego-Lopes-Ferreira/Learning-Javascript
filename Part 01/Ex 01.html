@@ -1,0 +1,37 @@
+<html>
+
+<head>
+
+  <title>Curso Javascript</title>
+</head>
+
+<body>
+
+  <script>
+  var endereco01 = {
+    nome: "Diego Rocketseat",
+    rua: "Rua dos pinheiros",
+    numero: 1293,
+    bairro: "Centro",
+    cidade: "São Paulo",
+    uf: "SP"
+  };
+  var endereco02 = {
+    nome: "Diego (eu)",
+    rua: "Rua Carlos Gomes",
+    numero: 537,
+    bairro: "Centro",
+    cidade: "Cornelio Procopio",
+    uf: "PR"
+  };
+
+  function callEnd(end) {
+    var mensagem = 'O usuário "' + end.nome + '" mora em ' + end.cidade + '/' + end.uf +' no bairro ' + end.bairro + ', na rua ' + end.rua + ', nº' + end.numero;
+    console.log(mensagem);
+  }
+
+  callEnd(endereco01);
+  callEnd(endereco02);
+  </script>
+</body>
+</html>

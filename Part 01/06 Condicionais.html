@@ -1,0 +1,42 @@
+<html>
+
+<head>
+
+  <title>Curso Javascript</title>
+</head>
+
+<body>
+
+  <script>
+    /**/
+    function retornaSexo(sexo) {
+        //M ou F
+        //Masculino ou Feminino
+        if (sexo == 'M'){
+            console.log('Masculino');
+        } else if (sexo == 'F') {
+            console.log('Feminino');
+        } else {
+            console.log('Outro')
+        };
+    };
+    //retornaSexo('Astronauta') //astronauta nao e um genero KKKK
+    //retornaSexo('M')
+    //retornaSexo('F')
+
+    function sex2(sex) {
+        switch(sex){
+            case 'M': 
+                return 'Masculino';
+            case 'F':
+                return 'Feminino';
+            default: 
+                return 'Outro';
+        }
+    }
+    console.log(sex2('dsbjcdhsbcdskhc')); //dsbjcdhsbcdskhc nao e um genero reconhecido...
+    console.log(sex2('F'));
+    console.log(sex2('M'));
+  </script>
+</body>
+</html>

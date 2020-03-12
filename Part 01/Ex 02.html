@@ -1,0 +1,20 @@
+<html>
+<head>
+  <title>Curso Javascript</title>
+</head>
+<body>
+  <script>
+    function pares(x, y) {
+      // código aqui
+      for (i = x; i <= y; i++) {
+        mgsPar = 'O n ' + i + ' e par';
+        msgImpar = 'O n ' + i + ' e impar';
+        var ePar = (i%2 === 0) ? mgsPar:msgImpar;
+        console.log(ePar);
+      }
+    };
+
+    pares(32, 321);
+  </script>
+</body>
+</html>
