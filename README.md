@@ -20,15 +20,15 @@ My projects done while learning javascript...
         [X] - Ex 05
 
 ## Part 02 - Manipulando a DOM
-    [ ] - Eventos inline
-    [ ] - Trabalhando com a DOM
-    [ ] - Lidando com elementos
-    [ ] - Alterando estilos
-    [ ] - Desafio   
-        [ ] - Ex 01
-        [ ] - Ex 02
-        [ ] - Ex 03
-        [ ] - Ex 04
+    [X] - Eventos inline
+    [X] - Trabalhando com a DOM
+    [X] - Lidando com elementos
+    [X] - Alterando estilos
+    [X] - Desafio   
+        [X] - Ex 01
+        [X] - Ex 02
+        [X] - Ex 03
+        [X] - Ex 04
 
 ## Student
 

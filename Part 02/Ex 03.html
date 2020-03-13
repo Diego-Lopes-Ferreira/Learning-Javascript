@@ -1,12 +1,29 @@
 <html>
+
 <head>
-    <title>Ex 03</title>
+  <title>Ex 03</title>
 </head>
+
 <body>
 
-<script>
+  <div id="app">
+    <div class="nomes" id="nomes"></div>
+  </div>
 
-</script>
+  <script>
+    var nomes = ["Diego", "Gabriel", "Lucas"];
+    var cont = document.querySelector('.nomes');
+    var ulNome = document.createElement('ul');
+    cont.appendChild(ulNome);
+    for(var nome of nomes) {
+      var liNome = document.createElement('li');
+      liNome.setAttribute('class', 'item');
+      ulNome.appendChild(liNome);
+      liNome.innerHTML = nome;
+    }
+
+  </script>
+
 
 </body>
 </html>

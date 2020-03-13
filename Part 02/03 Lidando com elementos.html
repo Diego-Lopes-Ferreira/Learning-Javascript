@@ -1,12 +1,33 @@
 <html>
 <head>
     <title>Lidando com elementos</title>
+    <style>
+      body {
+        background-color: rgb(0,0,0);
+        }
+    </style>
 </head>
 <body>
 
-<script>
+  <div id="app">
+    <input  id="sla" />
+  </div>
 
-</script>
+  <script>
+    var linkElement = document.createElement('a');
+    linkElement.setAttribute('href', 'https://github.com/Diego-Lopes-Ferreira');
+    linkElement.setAttribute('title', 'Acesse meu Github');
+    
+    var textElement = document.createTextNode('Diego - Github');
+    linkElement.appendChild(textElement);
+
+    var divzinha = document.querySelector('#app');
+    divzinha.appendChild(linkElement);
+
+    var inputElement = document.querySelector('#sla');
+    divzinha.removeChild(inputElement);
+
+  </script>
 
 </body>
 </html>

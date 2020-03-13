@@ -1,12 +1,60 @@
 <html>
+
 <head>
-    <title>Ex 02</title>
+  <title>Ex 02</title>
 </head>
+
 <body>
 
-<script>
+  <div id="app">
+    <button class="newQuad">Novo Quadrado</button>
+    <button class="delQuad">Exclui quadrado Quadrado</button>
+    <div class="quads" id="quads"></div>
+  </div>
 
-</script>
+  <script>
+    var newQuad = document.querySelector('.newQuad');
+    var delQuad = document.querySelector('.delQuad');
+    var container = document.querySelector('.quads');
+    var counter = 0;
+
+    function getRandomColor() {
+      var letters = "0123456789ABCDEF";
+      var color = "#";
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+    var newColor = getRandomColor(); // #E943F0
+
+
+
+    delQuad.onclick = function () {
+      var msg = 'body div#app div#quads div[name=q' + (counter - 1) + ']';
+      var elem = document.querySelector(msg);
+      container.removeChild(elem);
+      counter -= 1;
+    }
+
+
+    newQuad.onclick = function () {
+      var quad = document.createElement('div');
+      var msg = 'q' + counter;
+      counter += 1;
+      quad.setAttribute('name', msg)
+      quad.style.width = 100;
+      quad.style.height = 100;
+      quad.style.backgroundColor = '#000';
+      quad.onmouseover = function () {
+        var newColor = getRandomColor();
+        quad.style.backgroundColor = newColor;
+      }
+      quads.appendChild(quad);
+
+    }
+  </script>
 
 </body>
+
 </html>

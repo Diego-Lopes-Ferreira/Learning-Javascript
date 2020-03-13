@@ -3,8 +3,21 @@
     <title>Eventos inline</title>
 </head>
 <body>
+  <div id="app">
+    <button onmouseover="mostraAlerta()">Me Pressione</button>
+    <input onkeypress="mostraAlerta2()" />
+  </div>
 
 <script>
+  function mostraAlerta() {
+    alert('Botao foi clicado');
+  }
+
+  function mostraAlerta2() {
+    alert('VOce esta digitando');
+  }
+
+
 
 </script>
 

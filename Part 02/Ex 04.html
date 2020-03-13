@@ -1,12 +1,53 @@
 <html>
+
 <head>
-    <title>Ex 04</title>
+  <title>Ex 04</title>
 </head>
+
 <body>
 
-<script>
+  <div id="app">
+    <input class="nome" id="nome" />
+    <button class="add">Add Name</button>
+    <div class="nomes" id="nomes"></div>
+  </div>
 
-</script>
+  <script>
+    var nomes = ["Diego", "Gabriel", "Lucas"];
+    var cont = document.querySelector('.nomes');
+    var btn = document.querySelector('.add');
+    var entry = document.querySelector('.nome');
+    var ulNome = document.createElement('ul');
+
+    cont.appendChild(ulNome);
+    for (var nome of nomes) {
+      var liNome = document.createElement('li');
+      ulNome.appendChild(liNome);
+      liNome.innerHTML = nome;
+    }
+
+    btn.onclick = function () {
+      var nome = entry.value;
+      var liNome = document.createElement('li');
+      ulNome.appendChild(liNome);
+      liNome.innerHTML = nome;
+      console.log(nome);
+      entry.value = '';
+    }
+
+    entry.addEventListener("keyup", function (event) {
+      // Number 13 is the "Enter" key on the keyboard
+      if (event.keyCode === 13) {
+        // Cancel the default action, if needed
+        event.preventDefault();
+        // Trigger the button element with a click
+        btn.click();
+      }
+    });
+
+  </script>
+
 
 </body>
+
 </html>

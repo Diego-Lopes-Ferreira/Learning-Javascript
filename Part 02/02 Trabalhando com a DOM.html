@@ -1,12 +1,38 @@
 <html>
 <head>
     <title>Trabalhando com a DOM</title>
+    <style>
+      body {
+        background-color: rgb(0,0,0);
+        }
+    </style>
 </head>
 <body>
+  
+  <div id="app">
+    <input type="text" name="nome" id="nome" />
+    <button class="botao">Adicionar</button>
+  </div>
 
-<script>
+  <script>
+  
+    var inputElement = document.getElementsByTagName('input');
+    console.log(inputElement[0]);
 
-</script>
+    var elemento = document.querySelector('body div#app input'); //body nao precisa, ele sempre existe
+    console.log(elemento);
+    
+    var elemento2 = document.querySelector('input[name=nome]');
+    console.log(elemento2);
+    
+    var elemento3 = document.querySelector('button.botao');
+    elemento3.onclick = function() {
+      var texto = elemento2.value;
+      alert(texto)
+    }
+  
+  
+  </script>
 
 </body>
 </html>
