@@ -1,7 +1,8 @@
 # Learning-Javascript
 My projects done while learning javascript...
 
-## Part 01 - Introducao JavaScript
+## Curso JavaScript
+### Part 01 - Introducao JavaScript
     [X] - Introdução
     [X] - Configurando ambiente
     [X] - Variáveis e dados
@@ -19,7 +20,7 @@ My projects done while learning javascript...
         [X] - Ex 04
         [X] - Ex 05
 
-## Part 02 - Manipulando a DOM
+### Part 02 - Manipulando a DOM
     [X] - Eventos inline
     [X] - Trabalhando com a DOM
     [X] - Lidando com elementos
@@ -29,6 +30,14 @@ My projects done while learning javascript...
         [X] - Ex 02
         [X] - Ex 03
         [X] - Ex 04
+
+### Part 03 - App de To Dos
+    [X] - Estrutura do app
+    [ ] - Iniciando aplicação
+    [ ] - Renderizando Todos
+    [ ] - Criando Todos
+    [ ] - Excluindo Todos
+    [ ] - Salvando no storage
 
 ## Student
 
