@@ -33,11 +33,23 @@ My projects done while learning javascript...
 
 ### Part 03 - App de To Dos
     [X] - Estrutura do app
-    [ ] - Iniciando aplicação
-    [ ] - Renderizando Todos
-    [ ] - Criando Todos
-    [ ] - Excluindo Todos
-    [ ] - Salvando no storage
+    [X] - Iniciando aplicação
+    [X] - Renderizando Todos
+    [X] - Criando Todos
+    [X] - Excluindo Todos
+    [X] - Salvando no storage
+
+### Part 04 - JS assincrono
+    [X] - 3 aulas
+    [X] - Requisições AJAX
+    [X] - Promises
+    [X] - Utilizando Axios
+    [ ] - Desafio
+        [ ] - Ex 01
+        [ ] - Ex 02
+        [ ] - Ex 03
+
+
 
 ## Student
 
