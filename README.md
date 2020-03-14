@@ -44,10 +44,10 @@ My projects done while learning javascript...
     [X] - Requisições AJAX
     [X] - Promises
     [X] - Utilizando Axios
-    [ ] - Desafio
-        [ ] - Ex 01
-        [ ] - Ex 02
-        [ ] - Ex 03
+    [X] - Desafio
+        [X] - Ex 01
+        [X] - Ex 02
+        [X] - Ex 03
 
 
 
